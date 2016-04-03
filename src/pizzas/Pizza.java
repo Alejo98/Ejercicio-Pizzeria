@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pizzas;
+import java.util.*;
+/**
+ *
+ * @author USER
+ */
+public abstract class Pizza {
+    private String nombre;
+    public ArrayList masa=new ArrayList();
+    public String Salsa;
+    public ArrayList ingredientes= new ArrayList();
+
+    public Pizza() {
+    }
+    
+
+    public void preparacion(){
+        System.out.println("Preparando y amasando la masa...");
+        System.out.println("Tipo de Masa");
+        for(int i=0;i<masa.size();i++){
+             System.out.println(" "+(i+1)+": "+masa.get(i));
+        }
+        System.out.println("Salsas: Tipo de Salsa Tomate");
+        System.out.println("Ingredientes: ");
+        for(int i=0;i<ingredientes.size();i++){
+            System.out.println(" "+(i+1)+": "+ingredientes.get(i));
+        }
+    }
+    public void hornear(){System.out.println("El proceso de hornear tarda de 15 a 50 minutos");}
+    public void cortar(){System.out.println("El corte de la pizza se debe realizar en porciones triangulares del mismo tamaño");}
+    public void empacar(){System.out.println("Su caja es proporcional al tamaño de la pizza"
+            + " y de caracter cubico");}     
+
+    public String getNombre() {
+        return nombre;
+    }
+ }
+           
+ 
