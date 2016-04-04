@@ -8,9 +8,15 @@ package pizzas;
 /**
  *
  * @author Diego Alejandro Herrera
+ *  @version 1.0
  */
 public class Vegetariana extends Pizza{
     public Vegetariana() {
+         /**
+         * en el caso de esta extencion de la clase padre Pizza, se genera un constructor
+         * con cada uno de los componetes de la pizza y el nombre con el que se conoce 
+         * dentro de la pizzeria.
+         */
         String nombre="Pizza Vegetariana";
         String salsa="Tomate";
         masa.add("Regular");

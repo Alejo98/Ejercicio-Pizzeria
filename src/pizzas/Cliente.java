@@ -7,13 +7,22 @@ package pizzas;
 
 /**
  *
- * @author Diego Herrera 
+ * @author Diego Alejandro Herrera Burgos
+ * @version 1.0
  */
 public abstract class Cliente {
    protected abstract Pizza crearPizza(String tipoPizza);
+   /**
+    * Es un metodo que se usa para que luego de que el cliente escoga, se cree una pizza.
+    * @param tipoPizza
+    * @return 
+    */
  
     public Pizza OrdendelCliente(String tipoPizza){
-        Pizza pizza=null;
+        /**
+         * Metodo donde se da la orden del cliente.
+         */
+        Pizza pizza;
         pizza=crearPizza(tipoPizza);
         pizza.preparacion();
         pizza.hornear();

@@ -7,7 +7,8 @@ package pizzas;
 
 /**
  *
- * @author USER
+ * @author Diego Alejandro Herrera Burgos
+ * @version 1.0
  */
 public class Ventas extends Cliente {
 
@@ -15,11 +16,23 @@ public class Ventas extends Cliente {
     }
     
     public Pizza crearPizza(String tipo){
+        /**
+         * En la clase cliente se implemento CrearPizza()
+         */
         if (tipo.equals("vegetariana")){
+             /**
+             * Creacion de clases concretas, para cada Pizza.
+             */
             return new Vegetariana();
         }else if (tipo.equals("peperoni")){
+             /**
+             * Creacion de clases concretas, para cada Pizza.
+             */
             return new Peperoni();
         }else if(tipo.equals("queso")){
+             /**
+             * Creacion de clases concretas, para cada Pizza.
+             */
             return new Queso();
         }else return null;
     }

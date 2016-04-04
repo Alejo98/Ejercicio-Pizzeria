@@ -7,11 +7,18 @@ package pizzas;
 
 /**
  *
- * @author USER
+ * @author Diego Alejandro Herrera Burgos
+ *  @version 1.0
  */
 public class Peperoni extends Pizza {
     
-    public Peperoni() {
+    
+public Peperoni() {
+        /**
+         * en el caso de esta extencion de la clase padre Pizza, se genera un constructor
+         * con cada uno de los componetes de la pizza y el nombre con el que se conoce 
+         * dentro de la pizzeria.
+         */
         String nombre="Pizza Peperoni";
         String salsa="Tomate";
         masa.add("Regular");
@@ -19,7 +26,6 @@ public class Peperoni extends Pizza {
         ingredientes.add("Rodajas de cebolla");
         ingredientes.add("Queso parmesano rallado");
     }
-
    
     
 }
